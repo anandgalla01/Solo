@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:prod": "ng build --configuration production --base-href https://anandgalla01.github.io/angular-github-actions/",
+    "build:prod": "ng build --configuration production --base-href https://anandgalla01.github.io/solo/",
     "test:headless": "ng test --watch=false --browsers=ChromeHeadless"
   },
   "private": true,
