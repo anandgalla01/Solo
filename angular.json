@@ -17,9 +17,12 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/solo",
+             "outputPath": {
+              "base": "dist/solo",
+              "browser": ""
+            },
             "index": "src/index.html",
-            "browser": "",
+            "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
