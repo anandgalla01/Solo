@@ -1,0 +1,42 @@
+.nav-container {
+    background: rgb(5, 68, 104);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+    color: white;
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    ul {
+        padding-left: 0;
+
+        li {
+            list-style-type: none;
+            padding: 10px;
+            cursor: pointer;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+        li:hover,
+        li.active {
+
+            background-color: white;
+
+            a {
+                color: black !important;
+
+            }
+        }
+    }
+}
