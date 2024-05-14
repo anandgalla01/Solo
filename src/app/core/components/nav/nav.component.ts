@@ -27,7 +27,10 @@ export class NavComponent implements OnInit {
     this.router.events.pipe(
       filter((event) => event instanceof NavigationStart)
     ).subscribe((event: any) => {
-      this.menuItems.forEach((item) => item.isActive = item.url.includes(event["url"]));
+      event.url = event.url === '/' ? this.menuItems[0].url : event.url;
+      this.menuItems.forEach((item) => {
+        item.isActive = item.url.includes(event.url);
+      });
     });
   }
 
