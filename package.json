@@ -10,7 +10,7 @@
     "build:prod": "ng build --configuration production --base-href https://anandgalla01.github.io/angular-github-actions/",
     "test:headless": "ng test --watch=false --browsers=ChromeHeadless"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^17.3.0",
     "@angular/common": "^17.3.0",
